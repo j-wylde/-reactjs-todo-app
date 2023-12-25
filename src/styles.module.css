@@ -1,0 +1,93 @@
+/***Custom CSS***/
+.app_container {
+    width: 560px;
+    display: block;
+    background-color: rgb(4, 4, 4);
+    color: #fff;
+    border-radius: 10px;
+    border-right: 5px solid rgb(230, 47, 47);
+    border-top: 5px solid rgb(230, 47, 47);
+    padding: 10px;
+  }
+
+  .app_container > h1{
+    display: block;
+    margin-bottom: 25px;
+  }
+
+/******forms*****/
+form {
+    display: block;
+    margin: 15px;
+}
+form > label {
+    display: block;
+    font-size: 18px;
+}
+form > input {
+    border-radius: 5px;
+    outline: 1px solid grey;
+    color: grey;
+    width: 60%;
+    padding: 10px;
+    margin-left: 25px;
+    margin-right: 5px;
+    margin-bottom: 10px;
+}
+form > button {
+    background-color:rgb(222, 171, 43);
+    border: 0;
+    border-radius: 0;
+    color: #fff;
+    padding: 10px;
+}
+
+/****Todo List****/
+ul, li {
+    list-style: none;
+}
+ul input[type="checkbox"] > li {
+    display: inline-block;
+}
+li {
+    margin-bottom: 5px;
+}
+.todolist {
+    display: block;
+    line-height: 2rem;
+}
+
+.tList_danger {
+    background: rgb(211, 12, 12);
+    padding-right: 5px;
+    padding-left: 5px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    color: #fff;
+    margin-left: 10px;
+    font-size: 12px;
+}
+
+@media screen and (max-width: 480px) {
+    .app_container {
+        width: 100%;
+    }
+    
+}
+
+@media screen and (max-width: 440px) {
+    .app_container {
+        display: block;
+        padding: 20px;
+    }
+    form > input {
+        display: block;
+        width: 100%;
+        margin: 0 auto;
+        margin-bottom: 10px;
+    }
+    form > button {
+        display: block;
+        width: 100%;
+    }
+}
